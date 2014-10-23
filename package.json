@@ -1,0 +1,26 @@
+{
+  "name": "sea-b24-mean-median-mode",
+  "version": "1.0.0",
+  "description": "The base repo for sea-b24 mean, median and mode assignment",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "node_modules/mocha/bin/mocha test/mean_median_mode_tests.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/codefellows/sea-b24-mean-median-mode.git"
+  },
+  "author": "tyler@codefellows.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/codefellows/sea-b24-mean-median-mode/issues"
+  },
+  "homepage": "https://github.com/codefellows/sea-b24-mean-median-mode",
+  "devDependencies": {
+    "chai": "^1.9.2",
+    "mocha": "^2.0.1"
+  }
+}
