@@ -27,3 +27,10 @@ node_modules
 # Users Environment Variables
 .lock-wscript
 **/*.sw?
+
+# Eclipse or Webstorm junk
+workbench.xmi
+
+# Mac OS X junk
+.DS_Store
+.idea
