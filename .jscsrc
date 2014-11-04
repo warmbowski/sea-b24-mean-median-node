@@ -1,12 +1,6 @@
 {
-<<<<<<< HEAD
-  "validateQuoteMarks": true,
-  "disallowMultipleVarDecl": true
-}
-=======
   "preset": "airbnb",
   "requireMultipleVarDecl": null,
   "validateQuoteMarks": true,
   "disallowMultipleVarDecl": true
 }
->>>>>>> bb9fe852322d2b0df5279091659a53bb1271be69
