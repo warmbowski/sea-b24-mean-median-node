@@ -9,7 +9,12 @@ app.use(bodyParser.urlencoded());
 app.use(express.static(__dirname + 'build/'));
 
 app.post('/', function(req, res) {
-  
+  var numArray = req.body.numArray;
+  res.send({
+    'mean': mmm.mean(numArray), 
+    'median': mmm.median(numArray), 
+    'mode': mmm.mode(numArray)
+  });
 });
 
 app.set('port', process.env.PORT || 3000);
