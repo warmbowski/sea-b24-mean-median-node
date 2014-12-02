@@ -7,18 +7,23 @@
 
   <body>
     <h1>Mean - Median - Mode</h1>
-    <h3>for a list of numbers</h3>
+    <h3>Enter a list of numbers</h3>
     <div data-ng-app="mmmApp">
       <div data-ng-controller="mmmCtrl">
-        <label>Submit a list of Numbers (comma separated)</label>
+        <label>(Comma separated)</label><br/>
         <input data-ng-model="numList" type="text"/>
-        <button data-ng-click="submitNumList()">Submit Numbers</button>
+        <button data-ng-click="submitNumList()">Calculate</button>
         <div data-ng-show='mmmVals'>
-          <p>Calculated values for {{numList}} are {{mmmVals}}</p>
+          <p>Calculated values for {{numList}} are: </p>
+          <ul>
+            <li>Mean = {{mean}}</li>
+            <li>Median = {{median}}</li>
+            <li>Mode = {{mode}}</li>
+          </ul>
         </div>
       </div>
     </div>
 
-    <script src="client_bundle.js"></script>
+    <script src="bundle.js"></script>
   </body>
 </html>
