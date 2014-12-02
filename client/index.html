@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title></title>
+  </head>
+
+  <body>
+    <h1>Mean - Median - Mode</h1>
+    <h3>for a list of numbers</h3>
+    <div data-ng-app="mmmApp">
+      <div data-ng-controller="mmmCtrl">
+        <label>Submit a list of Numbers (comma separated)</label>
+        <input data-ng-model="numList" type="text"/>
+        <button data-ng-click="submitNumList()">Submit Numbers</button>
+        <div data-ng-show='mmmVals'>
+          <p>Calculated values for {{numList}} are {{mmmVals}}</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="client_bundle.js"></script>
+  </body>
+</html>
