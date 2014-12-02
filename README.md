@@ -16,3 +16,12 @@ Instructions
   * push to your fork
   * create a pull request
   * submit the PR url to canvas
+
+
+Additional
+------------------------------
+  * It should read the set of numbers in from a form and output them to the screen when a button labeled "calculate" is clicked.
+  * Do the calculation on the server side.
+  * Bonus Points: recalculate as new numbers are added instead of when "calculate" is clicked.
+  * You only need tests for the server side but jshint and jscs ALL of your code.
+  * Submit a link to the PR
