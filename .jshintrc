@@ -20,5 +20,6 @@
   "unused": true,
   "indent": 2,
   "node": true,
-  "browser": true
+  "browser": true,
+  "jasmine": true
 }

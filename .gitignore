@@ -19,6 +19,7 @@ grunt
 # Compiled binary addons (http://nodejs.org/api/addons.html)
 build/Release
 build
+test/angular_testbundle.js
 
 # Dependency directory
 # Commenting this out is preferred by some people, see
