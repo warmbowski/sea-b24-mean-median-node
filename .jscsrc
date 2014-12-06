@@ -3,5 +3,6 @@
   "requireMultipleVarDecl": null,
   "validateQuoteMarks": true,
   "disallowMultipleVarDecl": true,
-  "requireCamelCaseOrUpperCaseIdentifiers": "ignoreProperties"
+  "requireCamelCaseOrUpperCaseIdentifiers": "ignoreProperties",
+  "disallowQuotedKeysInObjects": "allButReserved"
 }

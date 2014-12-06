@@ -8,13 +8,12 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-browserify');
   grunt.loadNpmTasks('grunt-karma');
-  
 
   grunt.initConfig({
     jshint: {
       all: [
-        '*.js', 'lib/**/*.js', 
-        'client/**/*.js', 
+        '*.js', 'lib/**/*.js',
+        'client/**/*.js',
         'test/server/**/*.js',
         'test/client/**/*.js'
       ],
@@ -25,8 +24,8 @@ module.exports = function(grunt) {
 
     jscs: {
       src: [
-        '*.js', 'lib/**/*.js', 
-        'client/**/*.js', 
+        '*.js', 'lib/**/*.js',
+        'client/**/*.js',
         'test/server/**/*.js',
         'test/client/**/*.js'
       ],

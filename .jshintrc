@@ -10,7 +10,8 @@
     "after"      : false,
     "afterEach"  : false,
     "equal"      : false,
-    "angular"    : false
+    "angular"    : false,
+    "expect"     : true
   },
   "globalstrict": true,
   "quotmark": false,
@@ -20,6 +21,5 @@
   "unused": true,
   "indent": 2,
   "node": true,
-  "browser": true,
-  "jasmine": true
+  "browser": true
 }
