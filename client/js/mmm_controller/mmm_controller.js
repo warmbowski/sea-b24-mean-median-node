@@ -1,14 +1,10 @@
 'use strict';
 
 module.exports = function(app) {
-  app.controller('mmmCtrl', ['$scope', '$http', function($scope, $http) {
+  app.controller('mmmCtrl', ['$scope', '$http', 'mmmBackend',  function($scope, $http, mmmBackend) {
     $scope.numList = '5, 20, 12, 300';
     $scope.submitNumList = function() {
-      $http({
-        method: 'POST',
-        url: '/',
-        data: '{"numArray": [' + $scope.numList + ']}'
-      })
+      mmmBackend.submitNumList($scope.numList)
       .success(function(data) {
         $scope.numArray = $scope.numList.split(',').map(function(item) { return parseInt(item, 10); });
         $scope.mmmVals = data;
