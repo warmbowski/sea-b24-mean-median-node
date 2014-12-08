@@ -5,7 +5,6 @@ module.exports = function(app) {
     $scope.numList = '5, 20, 12, 300';
 
     $scope.submitNumList = function() {
-      
       $scope.numArray = $scope.numList.split(',').map(function(item) { return parseInt(item, 10); });
       $scope.mean = mmmCalcs().mean($scope.numArray);
       $scope.median = mmmCalcs().median($scope.numArray);

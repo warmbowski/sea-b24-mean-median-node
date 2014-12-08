@@ -5,7 +5,6 @@ require('angular-mocks');
 
 describe('mean-meadian-mode controller', function() {
   var $controllerConstructor;
-  var $httpBackend;
   var $scope;
 
   beforeEach(angular.mock.module('mmmApp'));
@@ -21,21 +20,11 @@ describe('mean-meadian-mode controller', function() {
   });
 
   describe('api request', function() {
-    beforeEach(angular.mock.inject(function(_$httpBackend_) {
-      $httpBackend = _$httpBackend_;
-    }));
-
-    afterEach(function() {
-      $httpBackend.verifyNoOutstandingExpectation();
-      $httpBackend.verifyNoOutstandingRequest();
-    });
 
     it('should put the response data into scope', function() {
-      $httpBackend.expectPOST('/').respond(200, {mean: 61.5, median: 16, mode: [12, 20]});
       $controllerConstructor('mmmCtrl', {$scope: $scope});
       $scope.numList = '5, 20, 12, 300, 20, 12';
       $scope.submitNumList();
-      $httpBackend.flush();
 
       expect($scope.numArray).toEqual([5, 20, 12, 300, 20, 12]);
       expect($scope.mean).toEqual(61.5);
@@ -44,11 +33,9 @@ describe('mean-meadian-mode controller', function() {
     });
 
     it('should display n/a when no mode', function() {
-      $httpBackend.expectPOST('/').respond(200, {mean: 84.25, median: 16, mode: [5, 12, 20, 300]});
       $controllerConstructor('mmmCtrl', {$scope: $scope});
       $scope.numList = '5, 20, 12, 300';
       $scope.submitNumList();
-      $httpBackend.flush();
 
       expect($scope.mode).toEqual('n/a');
     });
